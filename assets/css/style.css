@@ -1,0 +1,170 @@
+:root {
+    --background: rgb(180, 63, 34);
+    --h1: rgb(15, 10, 10);
+    --h2: yellow;
+    --nav: rgb(71, 230, 208);
+    --p: white;
+    --box: rgb(155, 156, 91);
+    --gray: rgb(133, 121, 128, 0.2);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+/* body general */
+body{
+    background-color: var(--background);
+    font-family: cursive;
+}
+
+h1 {
+    color: var(--h1);
+    padding-left: 10px;
+    margin: 20px;
+}
+
+h2 {
+    color: var(--h2);
+    text-align: left;
+    padding-left: 40px;
+    align-self: flex-start;
+    padding-top: 30px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+p,
+h4{
+    color: var(--p);
+    text-align: center;
+    font-family:cursive;
+    font-size: x-large;
+}
+
+footer{
+    margin-top: 50px;
+    color: var(--nav);
+    text-align: center;
+}
+
+/* Header + Nav bar */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--box);
+}
+
+.header nav ul a{
+    justify-content: flex-end;
+    color: var(--nav);
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    text-decoration: none;
+}
+/* targeting class & id */
+/* About me */
+#imgtext {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    
+    
+}
+
+.about img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    
+   
+    
+}
+
+/* portfolio */
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  } 
+  
+  /* Create three equal columns that sits next to each other */
+.card{
+    flex: 30%;
+    padding: 5px;
+}
+
+.portfolio div{
+    opacity: .60;
+}
+    
+.portfolio img{
+      width: 100%;
+      
+}
+
+.portfolio a{
+    text-decoration: none;
+}
+/* contact info */
+.contact a {
+    text-decoration: none;
+    color: var(--p)
+}
+    
+    /* hover */
+.portfolio div:hover{
+    opacity: 1;
+}
+
+.contact a:hover{
+    color: var(--h1)
+}
+
+.header a:hover{
+    color: var(--h1);
+    background-color: var(--gray);
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .header 
+    {
+       flex-direction: column;
+      }
+
+      #imgtext{
+          display: block;
+          padding: 15px;
+      }
+
+      .about img{
+          width: 100%;
+      }
+
+      #card{
+        flex: 100%;
+      }
+    
+      .contact ul{
+          flex-direction: column;
+          background-color: var(--gray);
+        } 
+        
+        .contact ul li{
+            margin: 15px;
+         }
+}
+  
