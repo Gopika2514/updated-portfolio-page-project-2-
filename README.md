@@ -12,10 +12,7 @@ Git site: https://gopika2514.github.io/updated-portfolio-page-project-2-/
 
 ## Visuals
 
-![screenshot](assets/images/web-view.png)
-
-![screenshot](assets/images/mobil-view.png)
-
+![screenshot](assets/images/webview.png)
 
 
 
